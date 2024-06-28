@@ -1,3 +1,4 @@
+#this is a file created by Jim
 from urllib.request import urlopen
 import json
 
@@ -11,6 +12,7 @@ def get_weather(city):
 
     return weather["main"]["temp"] -273.15
 
+#this is the main function calling location
 if __name__ == "__main__":
     user_city = input("Which city to check weather? ")
     degree = get_weather(user_city)    
